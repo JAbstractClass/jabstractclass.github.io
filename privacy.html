@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Datenschutzerklärung - Gridburst</title>
+<style>
+/*
+  Legal copy, designed to be read rather than skimmed past.
+
+  The previous pass styled this like a product page: neon-cyan section
+  headings, lime-green links, a hairline under every single table row and a
+  760px measure. That is decoration on a document whose whole job is to look
+  trustworthy and be legible. What changed:
+
+    * Measure down to ~34rem, roughly 70 characters, the range long-form text
+      is comfortable at.
+    * Hierarchy from size and weight, not from colour. The accent survives as
+      one rule under the title and nowhere else.
+    * Links in a blue that clears WCAG AA on this background and is underlined,
+      instead of lime green that fails on both counts.
+    * Tables keep a header rule and drop the per-row hairlines.
+*/
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 56px 22px 120px;
+  background: #0b0f1f;
+  color: #c9d3ef;
+  font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main { max-width: 34rem; margin: 0 auto; }
+
+h1 {
+  font-size: clamp(28px, 6vw, 36px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+  color: #fff;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  margin-top: 18px;
+  background: #2ec4ff;
+}
+h1 + p { margin-top: 18px; color: #7f8db8; font-size: 15px; }
+
+h2 {
+  font-size: 21px;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  margin: 52px 0 14px;
+  color: #fff;
+  font-weight: 700;
+}
+h3 { font-size: 17px; margin: 30px 0 8px; color: #fff; font-weight: 700; }
+
+p { margin: 0 0 18px; }
+strong { color: #eef2ff; font-weight: 700; }
+
+a {
+  color: #7cc4ff;
+  text-decoration-color: rgba(124, 196, 255, 0.45);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+a:hover { text-decoration-color: #7cc4ff; }
+
+ul { margin: 0 0 18px; padding-left: 22px; }
+li { margin: 0 0 8px; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #1e2647;
+  margin: 72px 0 56px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 26px;
+  font-size: 15.5px;
+}
+th {
+  text-align: left;
+  padding: 0 14px 10px 0;
+  color: #7f8db8;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border-bottom: 1px solid #2a3466;
+}
+td {
+  padding: 12px 14px 12px 0;
+  vertical-align: top;
+  border-bottom: 1px solid #161d3a;
+}
+tr:last-child td { border-bottom: 0; }
+th:last-child, td:last-child { padding-right: 0; }
+
+code {
+  background: #151d3d;
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  color: #a9b8e8;
+}
+pre {
+  background: #151d3d;
+  border-radius: 12px;
+  padding: 18px;
+  overflow-x: auto;
+  margin: 0 0 20px;
+}
+pre code { background: none; padding: 0; }
+
+blockquote {
+  margin: 0 0 22px;
+  padding: 2px 0 2px 20px;
+  border-left: 2px solid #2a3466;
+  color: #a3afd4;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Datenschutzerklärung für Gridburst</h1>
+<p>Stand: 11. September 2026</p>
+<h2>1. Verantwortlicher</h2>
+<p>Julian Litwinow<br>Amrumweg 11<br>33334 Gütersloh<br>Deutschland</p>
+<p>Telefon: +49 152 51556917<br>E-Mail: jlitwinow30@gmail.com</p>
+<h2>2. Kurzfassung</h2>
+<p>Gridburst ist ein Puzzlespiel ohne Benutzerkonto. Wir betreiben selbst keine Server und erheben selbst keine personenbezogenen Daten. Dein Spielstand bleibt auf deinem Gerät. Die App zeigt Werbung von Google AdMob, und dabei verarbeitet Google Daten über dich.</p>
+<h2>3. Daten, die auf dem Gerät bleiben</h2>
+<p>Die App speichert im lokalen Speicher der App (<code>localStorage</code>):</p>
+<table><thead><tr><th>Inhalt</th><th>Zweck</th></tr></thead><tbody>
+<tr><td>Höchstpunktzahl, beste Combo</td><td>Fortschrittsanzeige</td></tr>
+<tr><td>Münzstand</td><td>Währung für Power-ups</td></tr>
+<tr><td>Tages-Streak und letzter Spieltag</td><td>tägliche Belohnung</td></tr>
+<tr><td>Anzahl gespielter Runden</td><td>Taktung der Werbeeinblendungen</td></tr>
+<tr><td>Ton an/aus</td><td>Einstellung</td></tr>
+</tbody></table>
+<p>Diese Daten verlassen dein Gerät nicht, werden nicht an uns übertragen und werden gelöscht, wenn du die App deinstallierst oder die App-Daten löschst.</p>
+<h2>4. Werbung (Google AdMob)</h2>
+<p>Zur Finanzierung der App wird Google AdMob eingesetzt.</p>
+<p>Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p><strong>Verarbeitete Daten</strong> (durch Google, nicht durch uns): Werbe-ID des Geräts (Android Advertising ID), IP-Adresse, Gerätetyp, Betriebssystemversion, Spracheinstellung, ungefährer Standort auf Basis der IP-Adresse, Interaktionen mit Werbeanzeigen (Einblendungen, Klicks, angesehene Videos).</p>
+<p><strong>Zwecke:</strong> Ausliefern von Werbung, Begrenzung der Einblendungshäufigkeit, Messung der Werbeleistung, Betrugserkennung und, nur mit deiner Einwilligung, personalisierte Werbung.</p>
+<p><strong>Rechtsgrundlage:</strong> deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO. Sie wird beim ersten Start über das Google-Consent-Formular (UMP) eingeholt. Erteilst du keine Einwilligung, wird nicht personalisierte Werbung ausgeliefert.</p>
+<p><strong>Einwilligung ändern oder widerrufen:</strong> im Hauptmenü der App unten rechts auf <strong>WERBUNG</strong> tippen. Das Consent-Formular öffnet sich erneut.</p>
+<p><strong>Drittlandübermittlung:</strong> Google verarbeitet Daten auch in den USA. Grundlage sind die Standardvertragsklauseln der EU-Kommission bzw. der EU-US Data Privacy Framework-Angemessenheitsbeschluss.</p>
+<p>Weitere Informationen von Google:</p>
+<ul>
+<li>Datenschutzerklärung: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Wie Google Daten von Partner-Apps nutzt: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+<li>Anbieter, die Werbung ausliefern können: <a href="https://support.google.com/admob/answer/9012903">https://support.google.com/admob/answer/9012903</a></li>
+</ul>
+<p><strong>Werbe-ID zurücksetzen oder löschen:</strong> Android-Einstellungen, dann Datenschutz, dann Werbung. Der genaue Pfad hängt vom Hersteller ab.</p>
+<h2>5. Keine Analyse, kein Tracking durch uns</h2>
+<p>Die App enthält keine Analyse-SDKs, keine Crash-Reporter und keine Social-Media-Plugins. Wir erhalten von Google nur aggregierte, nicht personenbezogene Auswertungen über Werbeumsätze.</p>
+<h2>6. Berechtigungen</h2>
+<table><thead><tr><th>Berechtigung</th><th>Wofür</th></tr></thead><tbody>
+<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Werbung laden</td></tr>
+<tr><td><code>AD_ID</code></td><td>Werbe-ID für die Werbeauslieferung</td></tr>
+<tr><td><code>VIBRATE</code></td><td>haptisches Feedback beim Spielen</td></tr>
+</tbody></table>
+<p>Die App fordert keinen Zugriff auf Kontakte, Fotos, Mikrofon, Kamera oder den präzisen Standort.</p>
+<h2>7. Kinder</h2>
+<p>Die App ist nicht an Kinder unter 13 Jahren gerichtet. Wir erheben bewusst keine Daten von Kindern. Wenn du der Ansicht bist, dass ein Kind uns Daten übermittelt hat, melde dich unter den oben genannten Kontaktdaten.</p>
+<h2>8. Deine Rechte</h2>
+<p>Du hast nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine erteilte Einwilligung kannst du jederzeit widerrufen.</p>
+<p>Da wir selbst keine personenbezogenen Daten speichern, richte Anfragen zu Werbedaten bitte direkt an Google. Für alles Übrige erreichst du uns unter den oben genannten Kontaktdaten.</p>
+<p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
+<h2>9. Änderungen</h2>
+<p>Diese Erklärung wird angepasst, wenn sich die App oder die eingesetzten Dienste ändern. Die jeweils aktuelle Fassung ist unter dieser URL abrufbar.</p>
+<hr>
+<h1>Privacy Policy for Gridburst (English)</h1>
+<p>Last updated: 11 September 2026</p>
+<h2>1. Controller</h2>
+<p>Julian Litwinow<br>Amrumweg 11<br>33334 Gütersloh<br>Germany</p>
+<p>Phone: +49 152 51556917<br>E-mail: jlitwinow30@gmail.com</p>
+<h2>2. In short</h2>
+<p>Gridburst has no user accounts and we run no servers of our own. Your progress (high score, best combo, coins, daily streak, number of rounds played and the sound setting) is stored in the app&#x27;s local storage on your device only. It is never transmitted to us and is removed when you uninstall the app or clear its data.</p>
+<h2>3. Advertising (Google AdMob)</h2>
+<p>The app is funded by ads served through Google AdMob, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.</p>
+<p>Google processes your device&#x27;s advertising ID, IP address, device type, operating system version, language, approximate location derived from the IP address, and your interactions with ads. This happens for ad delivery, frequency capping, performance measurement, fraud prevention and, only with your consent, personalised advertising.</p>
+<p>The legal basis is your consent under Art. 6(1)(a) GDPR, collected on first launch through Google&#x27;s UMP consent form. Without consent you are shown non-personalised ads. You can change or withdraw consent at any time by tapping <strong>WERBUNG</strong> at the bottom of the app&#x27;s main menu.</p>
+<p>Google also processes data in the United States, based on the EU Commission&#x27;s standard contractual clauses and the EU-US Data Privacy Framework adequacy decision.</p>
+<p>More from Google:</p>
+<ul>
+<li>Privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>How Google uses data from partner apps: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+<li>Ad providers: <a href="https://support.google.com/admob/answer/9012903">https://support.google.com/admob/answer/9012903</a></li>
+</ul>
+<h2>4. No analytics, no tracking by us</h2>
+<p>The app contains no analytics SDKs, no crash reporters and no social media plugins. From Google we receive only aggregated, non-personal reporting on ad revenue.</p>
+<h2>5. Permissions</h2>
+<p><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> load ads, <code>AD_ID</code> provides the advertising ID used to serve them, and <code>VIBRATE</code> drives haptic feedback during play. The app requests no access to contacts, photos, microphone, camera or precise location.</p>
+<h2>6. Children</h2>
+<p>The app is not directed at children under 13. We deliberately collect no data from children. If you believe a child has sent us data, please contact us using the details above.</p>
+<h2>7. Your rights</h2>
+<p>Under the GDPR you have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21), and you may withdraw consent at any time.</p>
+<p>Because we store no personal data ourselves, please direct requests about advertising data to Google. For anything else, contact us using the details above. You also have the right to lodge a complaint with a data protection supervisory authority.</p>
+<h2>8. Changes</h2>
+<p>This policy is updated when the app or the services it uses change. The current version is always available at this URL.</p>
+</main>
+</body>
+</html>
