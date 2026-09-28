@@ -137,7 +137,7 @@ blockquote {
 <main>
 <h1>Privacy Policy</h1>
 <p>Applies to every app published by <strong>JL Studios</strong> (Julian Litwinow).</p>
-<p>Last updated: 27 September 2026</p>
+<p>Last updated: 28 September 2026</p>
 <h2>1. Who is responsible</h2>
 <p>Julian Litwinow, trading as JL Studios<br>Amrumweg 11<br>33334 Gütersloh<br>Germany</p>
 <p>Phone: +49 152 51556917<br>E-mail: jlitwinow30@gmail.com</p>
@@ -146,14 +146,14 @@ blockquote {
 <p>One policy works for all of them because they are all built the same way:</p>
 <ul>
 <li>no user account, no login, no profile</li>
-<li>no servers of our own, so nothing is sent to us</li>
+<li>no servers of our own, apart from a single report when an app is installed (section 8)</li>
 <li>everything the app remembers stays in storage on your device</li>
 <li>funded by advertising through Google AdMob</li>
 <li>some apps also sell optional items (for example in-game currency or ad removal), paid for through Google Play</li>
 </ul>
 <p>If an app ever does more than this, that app will say so in its own store listing, and a section will be added here before it ships. Until such a section exists, exactly what follows applies.</p>
 <h2>3. The short version</h2>
-<p>We do not collect personal data. We have no servers to collect it with and no accounts to attach it to. Your progress stays on your phone.</p>
+<p>We collect almost no personal data and have no accounts to attach it to. Your progress stays on your phone. The only thing that reaches us is one short report when an app is opened for the first time after installation, with an approximate location derived from the IP address; section 8 describes it.</p>
 <p>Our apps do show ads, and to show them Google AdMob processes data about your device. This is done by Google rather than by us, and section 5 describes it.</p>
 <p>If you buy something inside an app, Google Play handles the payment. We never see your payment details; we only receive the order record Google Play keeps for us, described in section 6.</p>
 <p>Two apps, Motorworks: Idle car factory and Block Out! Gate Rush, send pseudonymous usage statistics to GameAnalytics so we can see whether players enjoy them. Section 7 lists exactly what.</p>
@@ -205,34 +205,43 @@ blockquote {
 <p>Data is only sent once the ad consent question has been answered, or where it is not required in your region. No name, e-mail address, advertising id, contacts or location are sent.</p>
 <p>The provider is GameAnalytics ApS, Copenhagen, Denmark, processing the data on our behalf (Art. 28 GDPR). The legal basis is our legitimate interest in improving the game (Art. 6(1)(f) GDPR). You can object by writing to us using the contact details in section 1, or stop all transmission by clearing the app&#x27;s data or uninstalling it. GameAnalytics privacy policy: <a href="https://gameanalytics.com/privacy">https://gameanalytics.com/privacy</a></p>
 <p>Apart from that, our apps contain no crash reporters, no attribution SDKs and no social media plugins. We do not build profiles and we do not track you across apps or websites. From Google we receive only aggregated, non-personal reporting about ad revenue.</p>
-<h2>8. Permissions</h2>
+<h2>8. Install report</h2>
+<p>When an app is opened for the first time after installation, it sends one short report to our own server (<code>jl.love66.app</code>) so we can see whether and where our apps are being installed. <strong>Motorworks: Idle car factory</strong> does this from version 1.4.1; new apps do it from their first version. The report is sent once per installation. If the device is offline, it is sent on a later launch instead.</p>
+<table><thead><tr><th>Data</th><th>Details</th></tr></thead><tbody>
+<tr><td>app</td><td>name, package name, app version, and whether it is a release or test build</td></tr>
+<tr><td>random install id</td><td>generated inside the app for this one installation, only so that a repeated attempt is not counted twice; not the advertising id and not linked to your device or to you</td></tr>
+<tr><td>approximate location</td><td>city and country, looked up from the IP address on our server using a local database; the IP address itself is neither stored nor passed on</td></tr>
+</tbody></table>
+<p>Nothing else is sent: no name, no advertising id, no device identifier, no precise location and no game progress. The report is not combined with the data described in sections 5 and 7. The server is run for us by a hosting provider acting on our behalf.</p>
+<p>The legal basis is our legitimate interest in knowing how many people install our apps and in which regions (Art. 6(1)(f) GDPR). Install reports are deleted after twelve months at the latest. You can object at any time using the contact details in section 1.</p>
+<h2>9. Permissions</h2>
 <table><thead><tr><th>Permission</th><th>What it is for</th></tr></thead><tbody>
-<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>loading ads</td></tr>
+<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>loading ads, sending the install report (section 8)</td></tr>
 <tr><td><code>AD_ID</code></td><td>the advertising ID used to serve ads</td></tr>
 <tr><td><code>VIBRATE</code></td><td>haptic feedback during play</td></tr>
 <tr><td><code>BILLING</code></td><td>in-app purchases through Google Play (only apps that sell items)</td></tr>
 <tr><td><code>POST_NOTIFICATIONS</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>WAKE_LOCK</code></td><td>reminder notifications, for example that the daily reward is ready (only apps that offer them, and only if you allow notifications). They are scheduled on your device; nothing is sent to us or to a push service, and you can turn them off in Android settings at any time.</td></tr>
 </tbody></table>
 <p>Our apps do not request access to contacts, photos, files, microphone, camera or precise location. If an app ever needs more, it will be visible on that app&#x27;s store listing and described here.</p>
-<h2>9. Children</h2>
+<h2>10. Children</h2>
 <p>Our apps are not directed at children under 13 and are not part of Google Play&#x27;s Designed for Families programme. We do not knowingly collect any data from children, and our apps serve standard, non-child-directed ad traffic. If you believe a child has provided data, contact us at the address above and we will act on it.</p>
-<h2>10. Your rights under the GDPR</h2>
+<h2>11. Your rights under the GDPR</h2>
 <p>If you are in the EU or the EEA you have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21). Consent you have given can be withdrawn at any time, with effect for the future.</p>
-<p>Apart from the order records described in section 6, we hold no personal data ourselves, so requests about advertising data have to go to Google, who is the controller for it. For anything else, contact us using the details in section 1.</p>
+<p>Apart from the order records described in section 6 and the install reports described in section 8, we hold no personal data ourselves, so requests about advertising data have to go to Google, who is the controller for it. For anything else, contact us using the details in section 1.</p>
 <p>You also have the right to complain to a data protection supervisory authority. The one responsible for us is the Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Germany.</p>
-<h2>11. Your rights in the United States</h2>
+<h2>12. Your rights in the United States</h2>
 <p>If you live in California or another US state with a comprehensive privacy law, the following applies.</p>
 <p>We do not sell your personal information for money and never have. Sharing your advertising ID with Google for the purpose of personalised advertising may, however, count as selling or sharing under the CCPA/CPRA and comparable laws.</p>
 <p>You can opt out in either of two ways, and neither requires contacting us: decline personalised advertising in the consent form described in section 5, or delete your advertising ID in Android settings. Opting out does not reduce what the app can do; you simply see non-personalised ads.</p>
-<p>You also have the right to know what is collected, to request deletion, and not to be discriminated against for exercising these rights. Apart from order records for purchases, we hold no personal information ourselves; requests about advertising data should go to Google.</p>
-<h2>12. How long data is kept</h2>
-<p>Order records of purchases (section 6) are kept as long as tax and commercial law requires, in Germany up to ten years. Apart from that we keep nothing, so there is nothing on our side to delete. On-device data lives until you uninstall the app or clear its data. GameAnalytics keeps the usage statistics of Motorworks and Block Out! Gate Rush (section 7) according to its own retention periods. How long Google keeps advertising data is set out in Google&#x27;s own privacy policy, linked in section 5.</p>
-<h2>13. Changes to this policy</h2>
+<p>You also have the right to know what is collected, to request deletion, and not to be discriminated against for exercising these rights. Apart from order records for purchases and install reports, we hold no personal information ourselves; requests about advertising data should go to Google.</p>
+<h2>13. How long data is kept</h2>
+<p>Order records of purchases (section 6) are kept as long as tax and commercial law requires, in Germany up to ten years. Install reports (section 8) are deleted after twelve months at the latest. Apart from that we keep nothing on our side. On-device data lives until you uninstall the app or clear its data. GameAnalytics keeps the usage statistics of Motorworks and Block Out! Gate Rush (section 7) according to its own retention periods. How long Google keeps advertising data is set out in Google&#x27;s own privacy policy, linked in section 5.</p>
+<h2>14. Changes to this policy</h2>
 <p>This policy is updated when our apps or the services they use change. The version published at this URL is always the current and authoritative one. Current app versions load this page live when you open the privacy policy in the app; older versions show a built-in copy that may lag behind by one app update. The date at the top says when it last changed.</p>
 <hr>
 <h1>Datenschutzerklärung (Deutsch)</h1>
 <p>Gilt für alle Apps von <strong>JL Studios</strong> (Julian Litwinow).</p>
-<p>Stand: 27. September 2026</p>
+<p>Stand: 28. September 2026</p>
 <h2>1. Verantwortlicher</h2>
 <p>Julian Litwinow, handelnd als JL Studios<br>Amrumweg 11<br>33334 Gütersloh<br>Deutschland</p>
 <p>Telefon: +49 152 51556917<br>E-Mail: jlitwinow30@gmail.com</p>
@@ -241,14 +250,14 @@ blockquote {
 <p>Eine Erklärung reicht für alle, weil alle unsere Apps nach demselben Muster gebaut sind:</p>
 <ul>
 <li>kein Benutzerkonto, keine Anmeldung, kein Profil</li>
-<li>keine eigenen Server, also wird nichts an uns gesendet</li>
+<li>keine eigenen Server, abgesehen von einer einzigen Meldung, wenn eine App installiert wird (Abschnitt 8)</li>
 <li>alles, was die App sich merkt, bleibt im Speicher deines Geräts</li>
 <li>Finanzierung über Werbung von Google AdMob</li>
 <li>manche Apps verkaufen zusätzlich optionale Inhalte (zum Beispiel Spielwährung oder das Entfernen von Werbung), bezahlt über Google Play</li>
 </ul>
 <p>Sollte eine App darüber hinausgehen, steht das in ihrem Store-Eintrag, und hier wird vor der Veröffentlichung ein eigener Abschnitt ergänzt. Solange es diesen Abschnitt nicht gibt, gilt genau das Folgende.</p>
 <h2>3. Kurzfassung</h2>
-<p>Wir erheben keine personenbezogenen Daten. Wir haben keine Server, mit denen wir das könnten, und keine Konten, denen wir sie zuordnen könnten. Dein Spielstand bleibt auf deinem Handy.</p>
+<p>Wir erheben kaum personenbezogene Daten und haben keine Konten, denen wir sie zuordnen könnten. Dein Spielstand bleibt auf deinem Handy. Bei uns kommt nur eine kurze Meldung an, wenn eine App nach der Installation zum ersten Mal geöffnet wird, mit einem aus der IP-Adresse abgeleiteten ungefähren Standort; Abschnitt 8 beschreibt sie.</p>
 <p>Unsere Apps zeigen Werbung, und um die auszuliefern, verarbeitet Google AdMob Daten über dein Gerät. Das erfolgt durch Google und nicht durch uns, und Abschnitt 5 beschreibt es.</p>
 <p>Wenn du in einer App etwas kaufst, wickelt Google Play die Zahlung ab. Deine Zahlungsdaten sehen wir nie; wir erhalten nur den Bestelldatensatz, den Google Play für uns führt, beschrieben in Abschnitt 6.</p>
 <p>Zwei Apps, Motorworks: Idle car factory und Block Out! Gate Rush, senden pseudonyme Nutzungsstatistiken an GameAnalytics, damit wir sehen, ob die Spiele ankommen. Abschnitt 7 nennt genau, was.</p>
@@ -300,27 +309,36 @@ blockquote {
 <p>Die Daten werden erst gesendet, nachdem die Abfrage zur Werbeeinwilligung beantwortet wurde oder in deiner Region nicht erforderlich ist. Name, E-Mail-Adresse, Werbe-ID, Kontakte oder Standort werden nicht übertragen.</p>
 <p>Anbieter ist die GameAnalytics ApS, Kopenhagen, Dänemark, die die Daten in unserem Auftrag verarbeitet (Art. 28 DSGVO). Rechtsgrundlage ist unser berechtigtes Interesse an der Verbesserung des Spiels (Art. 6 Abs. 1 lit. f DSGVO). Du kannst widersprechen, indem du uns unter den Kontaktdaten in Abschnitt 1 schreibst, oder die Übertragung vollständig beenden, indem du die App-Daten löschst oder die App deinstallierst. Datenschutzerklärung von GameAnalytics: <a href="https://gameanalytics.com/privacy">https://gameanalytics.com/privacy</a></p>
 <p>Darüber hinaus enthalten unsere Apps keine Crash-Reporter, keine Attributions-SDKs und keine Social-Media-Plugins. Wir erstellen keine Profile und verfolgen dich nicht über Apps oder Websites hinweg. Von Google erhalten wir ausschließlich aggregierte, nicht personenbezogene Auswertungen über Werbeumsätze.</p>
-<h2>8. Berechtigungen</h2>
+<h2>8. Installationsmeldung</h2>
+<p>Wird eine App nach der Installation zum ersten Mal geöffnet, sendet sie eine kurze Meldung an unseren eigenen Server (<code>jl.love66.app</code>), damit wir sehen, ob und wo unsere Apps installiert werden. <strong>Motorworks: Idle car factory</strong> macht das ab Version 1.4.1, neue Apps ab ihrer ersten Version. Die Meldung wird einmal pro Installation gesendet. Ist das Gerät offline, wird sie bei einem späteren Start nachgeholt.</p>
+<table><thead><tr><th>Daten</th><th>Einzelheiten</th></tr></thead><tbody>
+<tr><td>App</td><td>Name, Paketname, App-Version und ob es sich um eine veröffentlichte Version oder einen Test-Build handelt</td></tr>
+<tr><td>zufällige Installations-ID</td><td>wird in der App nur für diese eine Installation erzeugt, damit ein wiederholter Sendeversuch nicht doppelt zählt; nicht die Werbe-ID und nicht mit deinem Gerät oder dir verknüpft</td></tr>
+<tr><td>ungefährer Standort</td><td>Stadt und Land, auf unserem Server mit einer lokalen Datenbank aus der IP-Adresse ermittelt; die IP-Adresse selbst wird weder gespeichert noch weitergegeben</td></tr>
+</tbody></table>
+<p>Sonst wird nichts übertragen: kein Name, keine Werbe-ID, keine Gerätekennung, kein genauer Standort und kein Spielstand. Die Meldung wird nicht mit den Daten aus den Abschnitten 5 und 7 zusammengeführt. Den Server betreibt ein Hosting-Anbieter in unserem Auftrag.</p>
+<p>Rechtsgrundlage ist unser berechtigtes Interesse daran zu wissen, wie viele Menschen unsere Apps installieren und in welchen Regionen (Art. 6 Abs. 1 lit. f DSGVO). Installationsmeldungen werden spätestens nach zwölf Monaten gelöscht. Du kannst jederzeit unter den Kontaktdaten in Abschnitt 1 widersprechen.</p>
+<h2>9. Berechtigungen</h2>
 <table><thead><tr><th>Berechtigung</th><th>Wofür</th></tr></thead><tbody>
-<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Werbung laden</td></tr>
+<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Werbung laden, Installationsmeldung senden (Abschnitt 8)</td></tr>
 <tr><td><code>AD_ID</code></td><td>Werbe-ID für die Auslieferung von Werbung</td></tr>
 <tr><td><code>VIBRATE</code></td><td>haptisches Feedback beim Spielen</td></tr>
 <tr><td><code>BILLING</code></td><td>In-App-Käufe über Google Play (nur Apps, die Inhalte verkaufen)</td></tr>
 <tr><td><code>POST_NOTIFICATIONS</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>WAKE_LOCK</code></td><td>Erinnerungs-Benachrichtigungen, zum Beispiel dass die Tagesbelohnung bereitliegt (nur Apps, die so etwas anbieten, und nur wenn du Benachrichtigungen erlaubst). Sie werden auf deinem Gerät geplant; nichts wird an uns oder an einen Push-Dienst gesendet, und du kannst sie jederzeit in den Android-Einstellungen abschalten.</td></tr>
 </tbody></table>
 <p>Unsere Apps fordern keinen Zugriff auf Kontakte, Fotos, Dateien, Mikrofon, Kamera oder den präzisen Standort. Braucht eine App ausnahmsweise mehr, ist das in ihrem Store-Eintrag sichtbar und wird hier beschrieben.</p>
-<h2>9. Kinder</h2>
+<h2>10. Kinder</h2>
 <p>Unsere Apps richten sich nicht an Kinder unter 13 Jahren und nehmen nicht am Programm Designed for Families von Google Play teil. Wir erheben wissentlich keine Daten von Kindern, und unsere Apps liefern gewöhnlichen, nicht an Kinder gerichteten Werbe-Traffic aus. Wenn du der Ansicht bist, dass ein Kind Daten übermittelt hat, melde dich unter den Kontaktdaten in Abschnitt 1.</p>
-<h2>10. Deine Rechte nach der DSGVO</h2>
+<h2>11. Deine Rechte nach der DSGVO</h2>
 <p>In der EU und im EWR hast du das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.</p>
-<p>Abgesehen von den Bestelldatensätzen aus Abschnitt 6 speichern wir selbst keine personenbezogenen Daten. Anfragen zu Werbedaten richte bitte direkt an Google als dortigen Verantwortlichen. Für alles Übrige erreichst du uns über die Angaben in Abschnitt 1.</p>
+<p>Abgesehen von den Bestelldatensätzen aus Abschnitt 6 und den Installationsmeldungen aus Abschnitt 8 speichern wir selbst keine personenbezogenen Daten. Anfragen zu Werbedaten richte bitte direkt an Google als dortigen Verantwortlichen. Für alles Übrige erreichst du uns über die Angaben in Abschnitt 1.</p>
 <p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Für uns zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
-<h2>11. Deine Rechte in den USA</h2>
+<h2>12. Deine Rechte in den USA</h2>
 <p>Für Nutzer in Kalifornien und anderen US-Bundesstaaten mit umfassenden Datenschutzgesetzen gilt: Wir verkaufen keine personenbezogenen Daten gegen Geld und haben das nie getan. Die Weitergabe der Werbe-ID an Google zum Zweck personalisierter Werbung kann nach CCPA/CPRA und vergleichbaren Gesetzen jedoch als Verkauf oder Weitergabe gelten.</p>
 <p>Du kannst dem auf zwei Wegen widersprechen, ohne uns kontaktieren zu müssen: personalisierte Werbung im Consent-Formular aus Abschnitt 5 ablehnen oder die Werbe-ID in den Android-Einstellungen löschen. Der Widerspruch schränkt die App nicht ein, du siehst dann nicht personalisierte Werbung.</p>
-<h2>12. Speicherdauer</h2>
-<p>Bestelldatensätze von Käufen (Abschnitt 6) werden so lange aufbewahrt, wie es Steuer- und Handelsrecht verlangen, in Deutschland bis zu zehn Jahre. Darüber hinaus speichern wir nichts, also gibt es bei uns nichts zu löschen. Die Daten auf dem Gerät bleiben, bis du die App deinstallierst oder ihre Daten löschst. Nutzungsstatistiken von Motorworks und Block Out! Gate Rush (Abschnitt 7) bewahrt GameAnalytics nach seinen eigenen Fristen auf. Wie lange Google Werbedaten aufbewahrt, steht in Googles eigener Datenschutzerklärung, verlinkt in Abschnitt 5.</p>
-<h2>13. Änderungen</h2>
+<h2>13. Speicherdauer</h2>
+<p>Bestelldatensätze von Käufen (Abschnitt 6) werden so lange aufbewahrt, wie es Steuer- und Handelsrecht verlangen, in Deutschland bis zu zehn Jahre. Installationsmeldungen (Abschnitt 8) werden spätestens nach zwölf Monaten gelöscht. Darüber hinaus speichern wir bei uns nichts. Die Daten auf dem Gerät bleiben, bis du die App deinstallierst oder ihre Daten löschst. Nutzungsstatistiken von Motorworks und Block Out! Gate Rush (Abschnitt 7) bewahrt GameAnalytics nach seinen eigenen Fristen auf. Wie lange Google Werbedaten aufbewahrt, steht in Googles eigener Datenschutzerklärung, verlinkt in Abschnitt 5.</p>
+<h2>14. Änderungen</h2>
 <p>Diese Erklärung wird angepasst, wenn sich unsere Apps oder die eingesetzten Dienste ändern. Maßgeblich ist immer die unter dieser URL veröffentlichte Fassung. Aktuelle App-Versionen laden diese Seite live, wenn du in der App die Datenschutzerklärung öffnest; ältere Versionen zeigen eine eingebaute Kopie, die um ein App-Update hinterherhinken kann. Das Datum oben nennt den Stand.</p>
 </main>
 </body>
