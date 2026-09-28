@@ -153,10 +153,10 @@ blockquote {
 </ul>
 <p>If an app ever does more than this, that app will say so in its own store listing, and a section will be added here before it ships. Until such a section exists, exactly what follows applies.</p>
 <h2>3. The short version</h2>
-<p>We collect almost no personal data and have no accounts to attach it to. Your progress stays on your phone. The only thing that reaches us is one short report when an app is opened for the first time after installation, with an approximate location derived from the IP address; section 8 describes it.</p>
+<p>We collect almost no personal data and have no accounts to attach it to. Your progress stays on your phone. What reaches us is one short report when an app is opened for the first time after installation, with an approximate location derived from the IP address (section 8), and pseudonymous usage statistics (section 7).</p>
 <p>Our apps do show ads, and to show them Google AdMob processes data about your device. This is done by Google rather than by us, and section 5 describes it.</p>
 <p>If you buy something inside an app, Google Play handles the payment. We never see your payment details; we only receive the order record Google Play keeps for us, described in section 6.</p>
-<p>Two apps, Motorworks: Idle car factory and Block Out! Gate Rush, send pseudonymous usage statistics to GameAnalytics so we can see whether players enjoy them. Section 7 lists exactly what.</p>
+<p>Our games send pseudonymous usage statistics to our own server so we can see whether players enjoy them. No analytics company is involved. Section 7 lists exactly what.</p>
 <h2>4. Data that stays on your device</h2>
 <p>Depending on the app, some of the following is written to the app&#x27;s local storage:</p>
 <table><thead><tr><th>Stored</th><th>Why</th></tr></thead><tbody>
@@ -190,20 +190,21 @@ blockquote {
 <p><strong>What we see:</strong> in the Google Play Console we can see order records (order number, item, price, date and country or region). We use them only for accounting, taxes, refunds and support requests.</p>
 <p><strong>Legal basis:</strong> performance of the purchase contract (Art. 6(1)(b) GDPR) and our legal obligations to keep tax and accounting records (Art. 6(1)(c) GDPR).</p>
 <p><strong>Refunds and payment questions:</strong> go to Google Play (Play Store app, then Payments and subscriptions, then Budget and history), or contact us using the details in section 1. Google&#x27;s privacy policy applies to the payment itself: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-<h2>7. Game analytics (GameAnalytics, Motorworks and Block Out! Gate Rush only)</h2>
-<p>From version 1.2.0, <strong>Motorworks: Idle car factory</strong> (<code>com.jlstudios.motorworks</code>) uses GameAnalytics to understand how the game is played: how long a session lasts, whether players come back, how far they get and which ad videos they watch. From version 1.0, <strong>Block Out! Gate Rush</strong> (<code>com.jlstudios.blocktraffixjam</code>) uses GameAnalytics in the same way. All our other apps contain no analytics SDK. What is sent:</p>
+<h2>7. Game analytics</h2>
+<p>All our games collect pseudonymous usage statistics to understand how the game is played: how long a session lasts, whether players come back, how far they get and which ad videos they watch. The statistics go to our own server (<code>jl.love66.app</code>); no analytics company is involved, and the server is run for us by a hosting provider acting on our behalf. What is sent:</p>
 <table>
 <thead><tr><th>Data</th><th>Example</th></tr></thead>
 <tbody>
-<tr><td>randomly generated user id</td><td>stored in the app, not the advertising id</td></tr>
-<tr><td>session start, end and number</td><td>play time, returning players</td></tr>
-<tr><td>device data</td><td>manufacturer, model, Android version, app version</td></tr>
-<tr><td>country</td><td>derived from the IP address; the IP address itself is not stored</td></tr>
-<tr><td>game events</td><td>Motorworks: tutorial steps, production lines unlocked, licences, IPO, contracts, ad videos watched. Block Out! Gate Rush: rounds started and ended with score, level reached, coins earned and spent, ad videos watched</td></tr>
+<tr><td>random player id</td><td>generated in the app on the first launch and stored there; not the advertising id and not a hardware id</td></tr>
+<tr><td>sessions</td><td>start and end of a session, time the game was open in the foreground</td></tr>
+<tr><td>app</td><td>name, package name, app version, and whether it is a release or test build</td></tr>
+<tr><td>device data</td><td>platform, Android version, device model, language, time zone, screen resolution</td></tr>
+<tr><td>approximate location</td><td>city and country, looked up from the IP address on our server; the IP address itself is not stored</td></tr>
+<tr><td>game events</td><td>rounds or levels started and finished with score, tutorial steps, upgrades and unlocks, coins earned and spent, ad videos watched or closed early, reminder notifications opened</td></tr>
 </tbody>
 </table>
-<p>Data is only sent once the ad consent question has been answered, or where it is not required in your region. No name, e-mail address, advertising id, contacts or location are sent.</p>
-<p>The provider is GameAnalytics ApS, Copenhagen, Denmark, processing the data on our behalf (Art. 28 GDPR). The legal basis is our legitimate interest in improving the game (Art. 6(1)(f) GDPR). You can object by writing to us using the contact details in section 1, or stop all transmission by clearing the app&#x27;s data or uninstalling it. GameAnalytics privacy policy: <a href="https://gameanalytics.com/privacy">https://gameanalytics.com/privacy</a></p>
+<p>Data is only sent once the ad consent question has been answered, or where it is not required in your region. While the device is offline, events are kept on the device and sent later. No name, e-mail address, advertising id, contacts or precise location are sent. In the app, the privacy policy shows your player id underneath (&quot;Your analytics player ID&quot;); quote it if you want us to show you or delete your usage data.</p>
+<p>The legal basis is our legitimate interest in improving our games (Art. 6(1)(f) GDPR). You can object by writing to us using the contact details in section 1, or stop all transmission by clearing the app&#x27;s data or uninstalling it.</p>
 <p>Apart from that, our apps contain no crash reporters, no attribution SDKs and no social media plugins. We do not build profiles and we do not track you across apps or websites. From Google we receive only aggregated, non-personal reporting about ad revenue.</p>
 <h2>8. Install report</h2>
 <p>When an app is opened for the first time after installation, it sends one short report to our own server (<code>jl.love66.app</code>) so we can see whether and where our apps are being installed. <strong>Motorworks: Idle car factory</strong> does this from version 1.4.1; new apps do it from their first version. The report is sent once per installation. If the device is offline, it is sent on a later launch instead.</p>
@@ -216,7 +217,7 @@ blockquote {
 <p>The legal basis is our legitimate interest in knowing how many people install our apps and in which regions (Art. 6(1)(f) GDPR). Install reports are deleted after twelve months at the latest. You can object at any time using the contact details in section 1.</p>
 <h2>9. Permissions</h2>
 <table><thead><tr><th>Permission</th><th>What it is for</th></tr></thead><tbody>
-<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>loading ads, sending the install report (section 8)</td></tr>
+<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>loading ads, sending the install report (section 8) and usage statistics (section 7)</td></tr>
 <tr><td><code>AD_ID</code></td><td>the advertising ID used to serve ads</td></tr>
 <tr><td><code>VIBRATE</code></td><td>haptic feedback during play</td></tr>
 <tr><td><code>BILLING</code></td><td>in-app purchases through Google Play (only apps that sell items)</td></tr>
@@ -227,15 +228,15 @@ blockquote {
 <p>Our apps are not directed at children under 13 and are not part of Google Play&#x27;s Designed for Families programme. We do not knowingly collect any data from children, and our apps serve standard, non-child-directed ad traffic. If you believe a child has provided data, contact us at the address above and we will act on it.</p>
 <h2>11. Your rights under the GDPR</h2>
 <p>If you are in the EU or the EEA you have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21). Consent you have given can be withdrawn at any time, with effect for the future.</p>
-<p>Apart from the order records described in section 6 and the install reports described in section 8, we hold no personal data ourselves, so requests about advertising data have to go to Google, who is the controller for it. For anything else, contact us using the details in section 1.</p>
+<p>Apart from the order records described in section 6, the usage statistics described in section 7 and the install reports described in section 8, we hold no personal data ourselves, so requests about advertising data have to go to Google, who is the controller for it. For usage statistics, include the player id shown under the privacy policy in the app so we can find your data. For anything else, contact us using the details in section 1.</p>
 <p>You also have the right to complain to a data protection supervisory authority. The one responsible for us is the Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Germany.</p>
 <h2>12. Your rights in the United States</h2>
 <p>If you live in California or another US state with a comprehensive privacy law, the following applies.</p>
 <p>We do not sell your personal information for money and never have. Sharing your advertising ID with Google for the purpose of personalised advertising may, however, count as selling or sharing under the CCPA/CPRA and comparable laws.</p>
 <p>You can opt out in either of two ways, and neither requires contacting us: decline personalised advertising in the consent form described in section 5, or delete your advertising ID in Android settings. Opting out does not reduce what the app can do; you simply see non-personalised ads.</p>
-<p>You also have the right to know what is collected, to request deletion, and not to be discriminated against for exercising these rights. Apart from order records for purchases and install reports, we hold no personal information ourselves; requests about advertising data should go to Google.</p>
+<p>You also have the right to know what is collected, to request deletion, and not to be discriminated against for exercising these rights. Apart from order records for purchases, usage statistics and install reports, we hold no personal information ourselves; requests about advertising data should go to Google.</p>
 <h2>13. How long data is kept</h2>
-<p>Order records of purchases (section 6) are kept as long as tax and commercial law requires, in Germany up to ten years. Install reports (section 8) are deleted after twelve months at the latest. Apart from that we keep nothing on our side. On-device data lives until you uninstall the app or clear its data. GameAnalytics keeps the usage statistics of Motorworks and Block Out! Gate Rush (section 7) according to its own retention periods. How long Google keeps advertising data is set out in Google&#x27;s own privacy policy, linked in section 5.</p>
+<p>Order records of purchases (section 6) are kept as long as tax and commercial law requires, in Germany up to ten years. Usage statistics (section 7): individual events are deleted after 90 days, and a player who has not opened a game for 400 days is deleted with all their data. Install reports (section 8) are deleted after twelve months at the latest. Apart from that we keep nothing on our side. On-device data lives until you uninstall the app or clear its data. How long Google keeps advertising data is set out in Google&#x27;s own privacy policy, linked in section 5.</p>
 <h2>14. Changes to this policy</h2>
 <p>This policy is updated when our apps or the services they use change. The version published at this URL is always the current and authoritative one. Current app versions load this page live when you open the privacy policy in the app; older versions show a built-in copy that may lag behind by one app update. The date at the top says when it last changed.</p>
 <hr>
@@ -257,10 +258,10 @@ blockquote {
 </ul>
 <p>Sollte eine App darüber hinausgehen, steht das in ihrem Store-Eintrag, und hier wird vor der Veröffentlichung ein eigener Abschnitt ergänzt. Solange es diesen Abschnitt nicht gibt, gilt genau das Folgende.</p>
 <h2>3. Kurzfassung</h2>
-<p>Wir erheben kaum personenbezogene Daten und haben keine Konten, denen wir sie zuordnen könnten. Dein Spielstand bleibt auf deinem Handy. Bei uns kommt nur eine kurze Meldung an, wenn eine App nach der Installation zum ersten Mal geöffnet wird, mit einem aus der IP-Adresse abgeleiteten ungefähren Standort; Abschnitt 8 beschreibt sie.</p>
+<p>Wir erheben kaum personenbezogene Daten und haben keine Konten, denen wir sie zuordnen könnten. Dein Spielstand bleibt auf deinem Handy. Bei uns kommen eine kurze Meldung an, wenn eine App nach der Installation zum ersten Mal geöffnet wird, mit einem aus der IP-Adresse abgeleiteten ungefähren Standort (Abschnitt 8), und pseudonyme Nutzungsstatistiken (Abschnitt 7).</p>
 <p>Unsere Apps zeigen Werbung, und um die auszuliefern, verarbeitet Google AdMob Daten über dein Gerät. Das erfolgt durch Google und nicht durch uns, und Abschnitt 5 beschreibt es.</p>
 <p>Wenn du in einer App etwas kaufst, wickelt Google Play die Zahlung ab. Deine Zahlungsdaten sehen wir nie; wir erhalten nur den Bestelldatensatz, den Google Play für uns führt, beschrieben in Abschnitt 6.</p>
-<p>Zwei Apps, Motorworks: Idle car factory und Block Out! Gate Rush, senden pseudonyme Nutzungsstatistiken an GameAnalytics, damit wir sehen, ob die Spiele ankommen. Abschnitt 7 nennt genau, was.</p>
+<p>Unsere Spiele senden pseudonyme Nutzungsstatistiken an unseren eigenen Server, damit wir sehen, ob die Spiele ankommen. Kein Analyse-Unternehmen ist beteiligt. Abschnitt 7 nennt genau, was.</p>
 <h2>4. Daten, die auf dem Gerät bleiben</h2>
 <p>Je nach App wird ein Teil der folgenden Werte im lokalen Speicher der App abgelegt:</p>
 <table><thead><tr><th>Gespeichert</th><th>Wofür</th></tr></thead><tbody>
@@ -294,20 +295,21 @@ blockquote {
 <p><strong>Was wir sehen:</strong> in der Google Play Console sehen wir Bestelldatensätze (Bestellnummer, Inhalt, Preis, Datum sowie Land oder Region). Wir nutzen sie ausschließlich für Buchhaltung, Steuern, Erstattungen und Supportanfragen.</p>
 <p><strong>Rechtsgrundlage:</strong> Erfüllung des Kaufvertrags (Art. 6 Abs. 1 lit. b DSGVO) und unsere gesetzlichen Aufbewahrungspflichten für Steuer- und Buchhaltungsunterlagen (Art. 6 Abs. 1 lit. c DSGVO).</p>
 <p><strong>Erstattungen und Fragen zur Zahlung:</strong> über Google Play (Play Store-App, dann Zahlungen und Abos, dann Budget und Verlauf) oder über unsere Kontaktdaten in Abschnitt 1. Für die Zahlung selbst gilt die Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-<h2>7. Spielanalyse (GameAnalytics, nur Motorworks und Block Out! Gate Rush)</h2>
-<p><strong>Motorworks: Idle car factory</strong> (<code>com.jlstudios.motorworks</code>) nutzt ab Version 1.2.0 GameAnalytics, um zu verstehen, wie das Spiel gespielt wird: wie lange eine Sitzung dauert, ob Spieler wiederkommen, wie weit sie im Spiel kommen und welche Werbevideos sie ansehen. <strong>Block Out! Gate Rush</strong> (<code>com.jlstudios.blocktraffixjam</code>) nutzt GameAnalytics ab Version 1.0 auf dieselbe Weise. Alle anderen Apps enthalten kein Analyse-SDK. Übertragen werden:</p>
+<h2>7. Spielanalyse</h2>
+<p>Alle unsere Spiele erheben pseudonyme Nutzungsstatistiken, um zu verstehen, wie das Spiel gespielt wird: wie lange eine Sitzung dauert, ob Spieler wiederkommen, wie weit sie im Spiel kommen und welche Werbevideos sie ansehen. Die Statistiken gehen an unseren eigenen Server (<code>jl.love66.app</code>); kein Analyse-Unternehmen ist beteiligt, den Server betreibt ein Hosting-Anbieter in unserem Auftrag. Übertragen werden:</p>
 <table>
 <thead><tr><th>Daten</th><th>Beispiel</th></tr></thead>
 <tbody>
-<tr><td>zufällig erzeugte Nutzer-ID</td><td>wird in der App gespeichert, keine Werbe-ID</td></tr>
-<tr><td>Sitzungsbeginn, -ende, Sitzungsnummer</td><td>Spieldauer, Wiederkehr</td></tr>
-<tr><td>Gerätedaten</td><td>Hersteller, Modell, Android-Version, App-Version</td></tr>
-<tr><td>Land</td><td>wird aus der IP-Adresse abgeleitet; die IP-Adresse selbst wird nicht gespeichert</td></tr>
-<tr><td>Spielereignisse</td><td>Motorworks: Tutorial-Schritte, freigeschaltete Produktionslinien, Lizenzen, Börsengang, Aufträge, angesehene Werbevideos. Block Out! Gate Rush: gestartete und beendete Runden mit Punktzahl, erreichtes Level, verdiente und ausgegebene Münzen, angesehene Werbevideos</td></tr>
+<tr><td>zufällige Spieler-ID</td><td>wird beim ersten Start in der App erzeugt und dort gespeichert; keine Werbe-ID und keine Hardware-Kennung</td></tr>
+<tr><td>Sitzungen</td><td>Beginn und Ende einer Sitzung, Zeit, in der das Spiel im Vordergrund geöffnet war</td></tr>
+<tr><td>App</td><td>Name, Paketname, App-Version und ob es sich um eine veröffentlichte Version oder einen Test-Build handelt</td></tr>
+<tr><td>Gerätedaten</td><td>Plattform, Android-Version, Gerätemodell, Sprache, Zeitzone, Bildschirmauflösung</td></tr>
+<tr><td>ungefährer Standort</td><td>Stadt und Land, auf unserem Server aus der IP-Adresse ermittelt; die IP-Adresse selbst wird nicht gespeichert</td></tr>
+<tr><td>Spielereignisse</td><td>gestartete und beendete Runden oder Level mit Punktzahl, Tutorial-Schritte, Upgrades und Freischaltungen, verdiente und ausgegebene Münzen, angesehene oder vorzeitig geschlossene Werbevideos, geöffnete Erinnerungs-Benachrichtigungen</td></tr>
 </tbody>
 </table>
-<p>Die Daten werden erst gesendet, nachdem die Abfrage zur Werbeeinwilligung beantwortet wurde oder in deiner Region nicht erforderlich ist. Name, E-Mail-Adresse, Werbe-ID, Kontakte oder Standort werden nicht übertragen.</p>
-<p>Anbieter ist die GameAnalytics ApS, Kopenhagen, Dänemark, die die Daten in unserem Auftrag verarbeitet (Art. 28 DSGVO). Rechtsgrundlage ist unser berechtigtes Interesse an der Verbesserung des Spiels (Art. 6 Abs. 1 lit. f DSGVO). Du kannst widersprechen, indem du uns unter den Kontaktdaten in Abschnitt 1 schreibst, oder die Übertragung vollständig beenden, indem du die App-Daten löschst oder die App deinstallierst. Datenschutzerklärung von GameAnalytics: <a href="https://gameanalytics.com/privacy">https://gameanalytics.com/privacy</a></p>
+<p>Die Daten werden erst gesendet, nachdem die Abfrage zur Werbeeinwilligung beantwortet wurde oder in deiner Region nicht erforderlich ist. Ist das Gerät offline, bleiben die Ereignisse auf dem Gerät und werden später gesendet. Name, E-Mail-Adresse, Werbe-ID, Kontakte oder genauer Standort werden nicht übertragen. In der App steht unter der Datenschutzerklärung deine Spieler-ID (&quot;Your analytics player ID&quot;); nenne sie, wenn wir dir deine Nutzungsdaten zeigen oder sie löschen sollen.</p>
+<p>Rechtsgrundlage ist unser berechtigtes Interesse an der Verbesserung unserer Spiele (Art. 6 Abs. 1 lit. f DSGVO). Du kannst widersprechen, indem du uns unter den Kontaktdaten in Abschnitt 1 schreibst, oder die Übertragung vollständig beenden, indem du die App-Daten löschst oder die App deinstallierst.</p>
 <p>Darüber hinaus enthalten unsere Apps keine Crash-Reporter, keine Attributions-SDKs und keine Social-Media-Plugins. Wir erstellen keine Profile und verfolgen dich nicht über Apps oder Websites hinweg. Von Google erhalten wir ausschließlich aggregierte, nicht personenbezogene Auswertungen über Werbeumsätze.</p>
 <h2>8. Installationsmeldung</h2>
 <p>Wird eine App nach der Installation zum ersten Mal geöffnet, sendet sie eine kurze Meldung an unseren eigenen Server (<code>jl.love66.app</code>), damit wir sehen, ob und wo unsere Apps installiert werden. <strong>Motorworks: Idle car factory</strong> macht das ab Version 1.4.1, neue Apps ab ihrer ersten Version. Die Meldung wird einmal pro Installation gesendet. Ist das Gerät offline, wird sie bei einem späteren Start nachgeholt.</p>
@@ -320,7 +322,7 @@ blockquote {
 <p>Rechtsgrundlage ist unser berechtigtes Interesse daran zu wissen, wie viele Menschen unsere Apps installieren und in welchen Regionen (Art. 6 Abs. 1 lit. f DSGVO). Installationsmeldungen werden spätestens nach zwölf Monaten gelöscht. Du kannst jederzeit unter den Kontaktdaten in Abschnitt 1 widersprechen.</p>
 <h2>9. Berechtigungen</h2>
 <table><thead><tr><th>Berechtigung</th><th>Wofür</th></tr></thead><tbody>
-<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Werbung laden, Installationsmeldung senden (Abschnitt 8)</td></tr>
+<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Werbung laden, Installationsmeldung (Abschnitt 8) und Nutzungsstatistiken (Abschnitt 7) senden</td></tr>
 <tr><td><code>AD_ID</code></td><td>Werbe-ID für die Auslieferung von Werbung</td></tr>
 <tr><td><code>VIBRATE</code></td><td>haptisches Feedback beim Spielen</td></tr>
 <tr><td><code>BILLING</code></td><td>In-App-Käufe über Google Play (nur Apps, die Inhalte verkaufen)</td></tr>
@@ -331,13 +333,13 @@ blockquote {
 <p>Unsere Apps richten sich nicht an Kinder unter 13 Jahren und nehmen nicht am Programm Designed for Families von Google Play teil. Wir erheben wissentlich keine Daten von Kindern, und unsere Apps liefern gewöhnlichen, nicht an Kinder gerichteten Werbe-Traffic aus. Wenn du der Ansicht bist, dass ein Kind Daten übermittelt hat, melde dich unter den Kontaktdaten in Abschnitt 1.</p>
 <h2>11. Deine Rechte nach der DSGVO</h2>
 <p>In der EU und im EWR hast du das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.</p>
-<p>Abgesehen von den Bestelldatensätzen aus Abschnitt 6 und den Installationsmeldungen aus Abschnitt 8 speichern wir selbst keine personenbezogenen Daten. Anfragen zu Werbedaten richte bitte direkt an Google als dortigen Verantwortlichen. Für alles Übrige erreichst du uns über die Angaben in Abschnitt 1.</p>
+<p>Abgesehen von den Bestelldatensätzen aus Abschnitt 6, den Nutzungsstatistiken aus Abschnitt 7 und den Installationsmeldungen aus Abschnitt 8 speichern wir selbst keine personenbezogenen Daten. Nenne bei Anfragen zu Nutzungsstatistiken die Spieler-ID, die in der App unter der Datenschutzerklärung steht, damit wir deine Daten finden. Anfragen zu Werbedaten richte bitte direkt an Google als dortigen Verantwortlichen. Für alles Übrige erreichst du uns über die Angaben in Abschnitt 1.</p>
 <p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Für uns zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
 <h2>12. Deine Rechte in den USA</h2>
 <p>Für Nutzer in Kalifornien und anderen US-Bundesstaaten mit umfassenden Datenschutzgesetzen gilt: Wir verkaufen keine personenbezogenen Daten gegen Geld und haben das nie getan. Die Weitergabe der Werbe-ID an Google zum Zweck personalisierter Werbung kann nach CCPA/CPRA und vergleichbaren Gesetzen jedoch als Verkauf oder Weitergabe gelten.</p>
 <p>Du kannst dem auf zwei Wegen widersprechen, ohne uns kontaktieren zu müssen: personalisierte Werbung im Consent-Formular aus Abschnitt 5 ablehnen oder die Werbe-ID in den Android-Einstellungen löschen. Der Widerspruch schränkt die App nicht ein, du siehst dann nicht personalisierte Werbung.</p>
 <h2>13. Speicherdauer</h2>
-<p>Bestelldatensätze von Käufen (Abschnitt 6) werden so lange aufbewahrt, wie es Steuer- und Handelsrecht verlangen, in Deutschland bis zu zehn Jahre. Installationsmeldungen (Abschnitt 8) werden spätestens nach zwölf Monaten gelöscht. Darüber hinaus speichern wir bei uns nichts. Die Daten auf dem Gerät bleiben, bis du die App deinstallierst oder ihre Daten löschst. Nutzungsstatistiken von Motorworks und Block Out! Gate Rush (Abschnitt 7) bewahrt GameAnalytics nach seinen eigenen Fristen auf. Wie lange Google Werbedaten aufbewahrt, steht in Googles eigener Datenschutzerklärung, verlinkt in Abschnitt 5.</p>
+<p>Bestelldatensätze von Käufen (Abschnitt 6) werden so lange aufbewahrt, wie es Steuer- und Handelsrecht verlangen, in Deutschland bis zu zehn Jahre. Nutzungsstatistiken (Abschnitt 7): Einzelne Ereignisse werden nach 90 Tagen gelöscht, ein Spieler, der ein Spiel 400 Tage nicht geöffnet hat, wird mit allen Daten gelöscht. Installationsmeldungen (Abschnitt 8) werden spätestens nach zwölf Monaten gelöscht. Darüber hinaus speichern wir bei uns nichts. Die Daten auf dem Gerät bleiben, bis du die App deinstallierst oder ihre Daten löschst. Wie lange Google Werbedaten aufbewahrt, steht in Googles eigener Datenschutzerklärung, verlinkt in Abschnitt 5.</p>
 <h2>14. Änderungen</h2>
 <p>Diese Erklärung wird angepasst, wenn sich unsere Apps oder die eingesetzten Dienste ändern. Maßgeblich ist immer die unter dieser URL veröffentlichte Fassung. Aktuelle App-Versionen laden diese Seite live, wenn du in der App die Datenschutzerklärung öffnest; ältere Versionen zeigen eine eingebaute Kopie, die um ein App-Update hinterherhinken kann. Das Datum oben nennt den Stand.</p>
 </main>
