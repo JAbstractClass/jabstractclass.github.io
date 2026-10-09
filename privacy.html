@@ -137,7 +137,7 @@ blockquote {
 <main>
 <h1>Privacy Policy</h1>
 <p>Applies to every app published by <strong>JL Studios</strong> (Julian Litwinow).</p>
-<p>Last updated: 28 September 2026</p>
+<p>Last updated: 9 October 2026</p>
 <h2>1. Who is responsible</h2>
 <p>Julian Litwinow, trading as JL Studios<br>Amrumweg 11<br>33334 Gütersloh<br>Germany</p>
 <p>Phone: +49 152 51556917<br>E-mail: jlitwinow30@gmail.com</p>
@@ -151,7 +151,7 @@ blockquote {
 <li>funded by advertising through Google AdMob</li>
 <li>some apps also sell optional items (for example in-game currency or ad removal), paid for through Google Play</li>
 </ul>
-<p>If an app ever does more than this, that app will say so in its own store listing, and a section will be added here before it ships. Until such a section exists, exactly what follows applies.</p>
+<p>If an app ever does more than this, that app will say so in its own store listing, and a section will be added here before it ships. Until such a section exists, exactly what follows applies. <strong>Plotopia</strong> is such an app: an online game with a server of ours, described in section 15.</p>
 <h2>3. The short version</h2>
 <p>We collect almost no personal data and have no accounts to attach it to. Your progress stays on your phone. What reaches us is one short report when an app is opened for the first time after installation, with an approximate location derived from the IP address (section 8), and pseudonymous usage statistics (section 7).</p>
 <p>Our apps do show ads, and to show them Google AdMob processes data about your device. This is done by Google rather than by us, and section 5 describes it.</p>
@@ -239,10 +239,35 @@ blockquote {
 <p>Order records of purchases (section 6) are kept as long as tax and commercial law requires, in Germany up to ten years. Usage statistics (section 7): individual events are deleted after 90 days, and a player who has not opened a game for 400 days is deleted with all their data. Install reports (section 8) are deleted after twelve months at the latest. Apart from that we keep nothing on our side. On-device data lives until you uninstall the app or clear its data. How long Google keeps advertising data is set out in Google&#x27;s own privacy policy, linked in section 5.</p>
 <h2>14. Changes to this policy</h2>
 <p>This policy is updated when our apps or the services they use change. The version published at this URL is always the current and authoritative one. Current app versions load this page live when you open the privacy policy in the app; older versions show a built-in copy that may lag behind by one app update. The date at the top says when it last changed.</p>
+<h2 id="plotopia">15. Plotopia (online game)</h2>
+<p><strong>Plotopia</strong> (package <code>com.jlstudios.plotopia</code>) is different from our other apps: all players share one world that runs on our own game server. Sections 4 and 6 therefore apply to Plotopia only as described here; everything else above applies unchanged.</p>
+<h3>Your company account</h3>
+<p>On the first launch the app creates a company on our server, without a name, e-mail address or login. The app keeps a random access token on your device; the server only stores a one-way hash of it. Optionally you can create a backup code in the menu to move the company to another device.</p>
+<h3>What the server stores</h3>
+<table>
+<tr><th>Data</th><th>Why</th></tr>
+<tr><td>random company id, the hashed access token, creation date, last time online</td><td>running your account</td></tr>
+<tr><td>the company name you choose</td><td>shown to other players on your plot, in chat and on the leaderboard</td></tr>
+<tr><td>game state: plot, buildings, inventory, coins, gems, level, trades, Exchange listings, contracts</td><td>the game itself</td></tr>
+<tr><td>chat messages you send</td><td>the public chat; only the most recent 300 messages of all players are kept</td></tr>
+<tr><td>reports and blocks between companies</td><td>moderation and protecting players</td></tr>
+<tr><td>purchases: product, Google Play purchase token, order number, date, whether it was a test purchase</td><td>delivering what you bought exactly once and keeping the VIP subscription in sync</td></tr>
+</table>
+<p>The server does not store your IP address, advertising id, e-mail address or payment details. To check a purchase, the server asks Google Play whether the purchase token is valid (Google Play Developer API); Google then tells us the product, the order number, the state of the purchase and, for VIP, when the paid period ends.</p>
+<h3>Visible to other players</h3>
+<p>Your company name, your plot and its buildings, your level and net worth, your chat messages, your Exchange listings and the trades you agree to.</p>
+<h3>Legal basis</h3>
+<p>Providing the game you asked for (Art. 6(1)(b) GDPR); moderation of chat and reports on our legitimate interest in a safe game (Art. 6(1)(f) GDPR); order records as in section 6.</p>
+<h3 id="plotopia-delete">Deleting your company</h3>
+<p>In the app: <strong>Menu, then Delete company</strong>. This immediately deletes the company with its plot, buildings, inventory, chat messages, trades, listings, reports and blocks from the server. Without access to the app, e-mail <a href="mailto:jlitwinow30@gmail.com?subject=Plotopia%20account%20deletion">jlitwinow30@gmail.com</a> with the subject "Plotopia account deletion" and your company name; we delete it within 30 days. Order records of purchases are kept as long as tax law requires (section 13).</p>
+<h3>How long it is kept</h3>
+<p>Company data is kept as long as the company exists. Chat messages roll off once 300 newer messages have been written. Order records as in section 13.</p>
+<h3>Notifications</h3>
+<p>Plotopia's notifications (production finished, daily reward, comeback reminders) are scheduled on your device as described in section 9; no push service is involved.</p>
 <hr>
 <h1>Datenschutzerklärung (Deutsch)</h1>
 <p>Gilt für alle Apps von <strong>JL Studios</strong> (Julian Litwinow).</p>
-<p>Stand: 28. September 2026</p>
+<p>Stand: 9. Oktober 2026</p>
 <h2>1. Verantwortlicher</h2>
 <p>Julian Litwinow, handelnd als JL Studios<br>Amrumweg 11<br>33334 Gütersloh<br>Deutschland</p>
 <p>Telefon: +49 152 51556917<br>E-Mail: jlitwinow30@gmail.com</p>
@@ -256,7 +281,7 @@ blockquote {
 <li>Finanzierung über Werbung von Google AdMob</li>
 <li>manche Apps verkaufen zusätzlich optionale Inhalte (zum Beispiel Spielwährung oder das Entfernen von Werbung), bezahlt über Google Play</li>
 </ul>
-<p>Sollte eine App darüber hinausgehen, steht das in ihrem Store-Eintrag, und hier wird vor der Veröffentlichung ein eigener Abschnitt ergänzt. Solange es diesen Abschnitt nicht gibt, gilt genau das Folgende.</p>
+<p>Sollte eine App darüber hinausgehen, steht das in ihrem Store-Eintrag, und hier wird vor der Veröffentlichung ein eigener Abschnitt ergänzt. Solange es diesen Abschnitt nicht gibt, gilt genau das Folgende. <strong>Plotopia</strong> ist so eine App: ein Online-Spiel mit eigenem Server, beschrieben in Abschnitt 15.</p>
 <h2>3. Kurzfassung</h2>
 <p>Wir erheben kaum personenbezogene Daten und haben keine Konten, denen wir sie zuordnen könnten. Dein Spielstand bleibt auf deinem Handy. Bei uns kommen eine kurze Meldung an, wenn eine App nach der Installation zum ersten Mal geöffnet wird, mit einem aus der IP-Adresse abgeleiteten ungefähren Standort (Abschnitt 8), und pseudonyme Nutzungsstatistiken (Abschnitt 7).</p>
 <p>Unsere Apps zeigen Werbung, und um die auszuliefern, verarbeitet Google AdMob Daten über dein Gerät. Das erfolgt durch Google und nicht durch uns, und Abschnitt 5 beschreibt es.</p>
@@ -342,6 +367,31 @@ blockquote {
 <p>Bestelldatensätze von Käufen (Abschnitt 6) werden so lange aufbewahrt, wie es Steuer- und Handelsrecht verlangen, in Deutschland bis zu zehn Jahre. Nutzungsstatistiken (Abschnitt 7): Einzelne Ereignisse werden nach 90 Tagen gelöscht, ein Spieler, der ein Spiel 400 Tage nicht geöffnet hat, wird mit allen Daten gelöscht. Installationsmeldungen (Abschnitt 8) werden spätestens nach zwölf Monaten gelöscht. Darüber hinaus speichern wir bei uns nichts. Die Daten auf dem Gerät bleiben, bis du die App deinstallierst oder ihre Daten löschst. Wie lange Google Werbedaten aufbewahrt, steht in Googles eigener Datenschutzerklärung, verlinkt in Abschnitt 5.</p>
 <h2>14. Änderungen</h2>
 <p>Diese Erklärung wird angepasst, wenn sich unsere Apps oder die eingesetzten Dienste ändern. Maßgeblich ist immer die unter dieser URL veröffentlichte Fassung. Aktuelle App-Versionen laden diese Seite live, wenn du in der App die Datenschutzerklärung öffnest; ältere Versionen zeigen eine eingebaute Kopie, die um ein App-Update hinterherhinken kann. Das Datum oben nennt den Stand.</p>
+<h2 id="plotopia-de">15. Plotopia (Online-Spiel)</h2>
+<p><strong>Plotopia</strong> (Paket <code>com.jlstudios.plotopia</code>) unterscheidet sich von unseren anderen Apps: Alle Spieler teilen sich eine Welt, die auf unserem eigenen Spielserver läuft. Die Abschnitte 4 und 6 gelten für Plotopia deshalb nur so, wie hier beschrieben; alles andere gilt unverändert.</p>
+<h3>Dein Firmenkonto</h3>
+<p>Beim ersten Start legt die App auf unserem Server eine Firma an, ohne Namen, E-Mail-Adresse oder Login. Die App speichert auf deinem Gerät einen zufälligen Zugangsschlüssel; der Server speichert davon nur einen Einweg-Hash. Optional kannst du im Menü einen Backup-Code erzeugen, um die Firma auf ein anderes Gerät mitzunehmen.</p>
+<h3>Was der Server speichert</h3>
+<table>
+<tr><th>Daten</th><th>Wozu</th></tr>
+<tr><td>zufällige Firmen-ID, gehashter Zugangsschlüssel, Erstellungsdatum, zuletzt online</td><td>Betrieb deines Kontos</td></tr>
+<tr><td>der von dir gewählte Firmenname</td><td>wird anderen Spielern auf deinem Grundstück, im Chat und in der Rangliste angezeigt</td></tr>
+<tr><td>Spielstand: Grundstück, Gebäude, Inventar, Münzen, Edelsteine, Level, Tauschgeschäfte, Börsenangebote, Aufträge</td><td>das Spiel selbst</td></tr>
+<tr><td>Chatnachrichten, die du sendest</td><td>der öffentliche Chat; gespeichert werden nur die letzten 300 Nachrichten aller Spieler</td></tr>
+<tr><td>Meldungen und Blockierungen zwischen Firmen</td><td>Moderation und Schutz der Spieler</td></tr>
+<tr><td>Käufe: Produkt, Google-Play-Kauftoken, Bestellnummer, Datum, ob Testkauf</td><td>Gekauftes genau einmal ausliefern und das VIP-Abo aktuell halten</td></tr>
+</table>
+<p>Der Server speichert weder deine IP-Adresse noch Werbe-ID, E-Mail-Adresse oder Zahlungsdaten. Zur Prüfung eines Kaufs fragt der Server bei Google Play nach, ob das Kauftoken gültig ist (Google Play Developer API); Google teilt uns dann Produkt, Bestellnummer, Status des Kaufs und bei VIP das Ende des bezahlten Zeitraums mit.</p>
+<h3>Für andere Spieler sichtbar</h3>
+<p>Dein Firmenname, dein Grundstück mit Gebäuden, dein Level und Firmenwert, deine Chatnachrichten, deine Börsenangebote und die Tauschgeschäfte, denen du zustimmst.</p>
+<h3>Rechtsgrundlage</h3>
+<p>Bereitstellung des Spiels, das du nutzen möchtest (Art. 6 Abs. 1 lit. b DSGVO); Moderation von Chat und Meldungen auf Grundlage unseres berechtigten Interesses an einem sicheren Spiel (Art. 6 Abs. 1 lit. f DSGVO); Bestelldatensätze wie in Abschnitt 6.</p>
+<h3 id="plotopia-loeschen">Firma löschen</h3>
+<p>In der App: <strong>Menü, dann Delete company</strong>. Das löscht die Firma sofort mit Grundstück, Gebäuden, Inventar, Chatnachrichten, Tauschgeschäften, Angeboten, Meldungen und Blockierungen vom Server. Ohne Zugriff auf die App schreib eine E-Mail an <a href="mailto:jlitwinow30@gmail.com?subject=Plotopia%20account%20deletion">jlitwinow30@gmail.com</a> mit dem Betreff „Plotopia account deletion“ und deinem Firmennamen; wir löschen sie innerhalb von 30 Tagen. Bestelldatensätze bleiben so lange, wie das Steuerrecht es verlangt (Abschnitt 13).</p>
+<h3>Speicherdauer</h3>
+<p>Firmendaten werden gespeichert, solange die Firma besteht. Chatnachrichten fallen heraus, sobald 300 neuere geschrieben wurden. Bestelldatensätze wie in Abschnitt 13.</p>
+<h3>Benachrichtigungen</h3>
+<p>Plotopias Benachrichtigungen (Produktion fertig, Tagesbelohnung, Erinnerungen) werden wie in Abschnitt 9 beschrieben auf deinem Gerät geplant; es ist kein Push-Dienst beteiligt.</p>
 </main>
 </body>
 </html>
